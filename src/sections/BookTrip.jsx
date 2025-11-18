@@ -1,5 +1,5 @@
 import React from "react";
-import { Map, Send, Leaf, Building2, Heart } from "lucide-react"; 
+import { Map, Send, Leaf, Building2, Heart } from "lucide-react";
 import "./styles/BookTrip.css";
 
 const BookTrip = () => {
@@ -40,7 +40,7 @@ const BookTrip = () => {
               <div className="step-item" key={step.id}>
                 {/* Icon Box */}
                 <div className={`step-icon-box ${step.iconClass}`}>
-                {step.icon}
+                  {step.icon}
                 </div>
 
                 {/* Text */}
@@ -81,7 +81,7 @@ const BookTrip = () => {
 
             <div className="trip-footer">
               <div className="flex items-center gap-2">
-                <Building2 size={16} />
+                <img src="images/building 1.png" alt="" />{" "}
                 <span>24 people going</span>
               </div>
               <Heart size={20} color="#5E6282" />

@@ -1,19 +1,27 @@
 import React from "react";
 import { ChevronDown } from "lucide-react";
-import "./styles/Navbar.css"; 
+import "./styles/Navbar.css";
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="nav-container">
         {/* Logo */}
-<img src="images/Logo.png" alt="" />
+        <img src="images/Logo.png" alt="" />
         {/* Desktop Menu */}
         <ul className="nav-menu">
-          <li className="nav-item">Destinations</li>
-          <li className="nav-item">Hotels</li>
-          <li className="nav-item">Flights</li>
-          <li className="nav-item">Bookings</li>
+          <li className="nav-item">
+            <a href="#destinations">Destinations</a>
+          </li>
+          <li className="nav-item">
+            <a href="#hotels">Hotels</a>
+          </li>
+          <li className="nav-item">
+            <a href="#flights">Flights</a>
+          </li>
+          <li className="nav-item">
+            <a href="#bookings">Bookings</a>
+          </li>
         </ul>
 
         {/* Auth & Language */}

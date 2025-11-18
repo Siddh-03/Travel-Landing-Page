@@ -35,15 +35,16 @@
   list-style: none;
 }
 
-.nav-item {
+.nav-item a{
   color: #212832;
   font-size: 17px;
   font-weight: 500;
   cursor: pointer;
   transition: color 0.3s;
+  text-decoration: none;
 }
 
-.nav-item:hover {
+.nav-item a:hover {
   color: #df6951;
 }
 

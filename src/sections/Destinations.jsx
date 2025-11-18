@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Navigation } from "lucide-react"; 
+import { Navigation } from "lucide-react";
 import "./styles/Destinations.css";
 
 const Destinations = () => {
@@ -76,7 +76,10 @@ const Destinations = () => {
           </div>
         )}
 
-        <div className="spring-decor"></div>
+        {/* --- The Spring Decoration --- */}
+        <div className="spring-container">
+          <img src="images/spring.png" alt="" />
+        </div>
       </div>
     </section>
   );

@@ -2,51 +2,75 @@
   padding: 80px 0;
   background-color: white;
   position: relative;
+  overflow-x: hidden;
 }
 
 .newsletter-container {
   max-width: 1160px;
   margin: 0 auto;
   padding: 0 20px;
-  position: relative;
+  position: relative; 
 }
 
 /* The Purple Box */
 .newsletter-box {
-  /* opacity: 0.8; */
-  background-color: #dfd7f9; /* Light purple base */
-  background-image: linear-gradient(
-    to bottom right,
-    #dfd7f9 0%,
-    #dfd7f950 100%
+  background-color: #dfd7f9;
+  background: linear-gradient(
+    180deg,
+    rgba(223, 215, 249, 0.2) 0%,
+    rgba(223, 215, 249, 0.8) 100%
   );
   border-radius: 129px 20px 20px 20px;
   padding: 80px 40px;
   text-align: center;
   position: relative;
-  overflow: hidden;
+  overflow: hidden; 
+  z-index: 2;
 }
 
-/* Decoration (The faint rings) */
-.newsletter-box::before {
-  content: "";
+/* Common Ring Styles */
+.decor-ring {
   position: absolute;
-  bottom: -50px;
-  left: -50px;
-  width: 300px;
-  height: 300px;
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  border-radius: 50%;
+  opacity: 0.8;
   pointer-events: none;
+  z-index: -1; 
 }
 
-/* The Send Icon (Top Right) */
+/* Bottom Left Ring */
+.ring-left {
+  bottom: 5px;
+  left: -50px;
+  width: 500px;
+  height: auto;
+  transform: translate(-10%, 10%);
+}
+
+/* Top Right Ring */
+.ring-right {
+  opacity: 0.1;
+  top: 20px;
+  right: 23px;
+  width: 200px; 
+  height: auto;
+  transform: translate(10%, -10%);
+}
+
+/* Plus Group */
+.plus-decor-bottom {
+  position: absolute;
+  bottom: -70px;
+  right: -75px;
+  z-index: 1;
+}
+
+/* The Send Icon  */
 .send-icon-decor {
   position: absolute;
-  top: -20px;
-  right: -20px;
-  width: 70px;
-  height: 70px;
+  top: -10px;
+  right: -10px;
+  width: 60px;
+  height: 60px;
+  /* Gradient button background */
   background: linear-gradient(201.65deg, #747def 10.27%, #5e3be1 100%);
   border-radius: 50%;
   display: flex;
@@ -65,6 +89,8 @@
   line-height: 54px;
   max-width: 859px;
   margin: 0 auto 60px auto;
+  position: relative;
+  z-index: 2;
 }
 
 /* Form Area */
@@ -137,6 +163,8 @@
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 14px;
+  position: relative;
+  z-index: 2;
 }
 
 .status-message.success {
@@ -165,5 +193,10 @@
   .newsletter-title {
     font-size: 24px;
     line-height: 1.4;
+  }
+
+  /* Hide exterior decorations on mobile to prevent overflow */
+  .plus-decor-bottom {
+    display: none;
   }
 }

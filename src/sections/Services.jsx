@@ -1,30 +1,30 @@
 import React from "react";
-import "./styles/Services.css"; 
+import "./styles/Services.css";
 
 const servicesData = [
   {
     id: 1,
     title: "Calculated Weather",
     desc: "Built Wicket longer admire do barton vanity itself do in it.",
-    icon: "/images/Group 48.png", 
+    icon: "/images/Group 48.png",
   },
   {
     id: 2,
     title: "Best Flights",
     desc: "Engrossed listening. Park gate sell they west hard for the.",
-    icon: "/images/Group 51.png", 
+    icon: "/images/Group 51.png",
   },
   {
     id: 3,
     title: "Local Events",
     desc: "Barton vanity itself do in it. Preferd to men it engrossed listening.",
-    icon: "/images/Group 50.png", 
+    icon: "/images/Group 50.png",
   },
   {
     id: 4,
     title: "Customization",
     desc: "We deliver outsourced aviation services for military customers",
-    icon: "/images/Group 49.png", 
+    icon: "/images/Group 49.png",
   },
 ];
 
@@ -32,6 +32,10 @@ const Services = () => {
   return (
     <section className="services-section">
       <div className="services-container">
+        <div className="plus-group-container">
+          <img src="/images/Group 4.png" alt="" />
+        </div>
+
         {/* Header */}
         <div className="services-header">
           <span className="services-category">CATEGORY</span>
@@ -52,8 +56,6 @@ const Services = () => {
             </div>
           ))}
         </div>
-
-        <div className="plus-decor"></div>
       </div>
     </section>
   );

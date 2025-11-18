@@ -1,9 +1,49 @@
 /* Hero Section Container */
 .hero-section {
   width: 100%;
-  padding-top: 150px; 
+  padding-top: 150px;
   padding-bottom: 50px;
   position: relative;
+  overflow: visible;
+}
+
+/* --- 1. The Background Blob  --- */
+.hero-blob-container {
+  position: absolute;
+  top: -230px;
+  right: -40px;
+  pointer-events: none;
+  z-index: -1; 
+}
+
+.hero-blob-img {
+  max-width: 90vw; 
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  transform: translate(0, 0);
+}
+
+.highlight {
+  position: relative;
+  z-index: 1;
+  display: inline-block; 
+}
+
+.highlight::after {
+  content: "";
+  position: absolute;
+  left: -18px; 
+  bottom: 1px; 
+  width: 130%;
+  height: 20px; 
+  z-index: -1; 
+
+  /* This SVG creates the curve */
+  background-image: url("data:image/svg+xml,%3Csvg width='200' height='20' viewBox='0 0 200 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 12C35 5 102 -2 198 8' stroke='%23DF6951' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E");
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%; 
 }
 
 .hero-container {
@@ -14,18 +54,18 @@
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
+  position: relative; 
 }
 
-/* --- Left Side: Text Content --- */
 .hero-content {
   flex: 1;
   max-width: 600px;
-  z-index: 10; 
+  z-index: 10;
 }
 
 .tagline {
-  color: #DF6951;
-  font-family: 'Poppins', sans-serif;
+  color: #df6951;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 20px;
@@ -34,19 +74,18 @@
 }
 
 .headline {
-  color: #181E4B;
-  font-family: 'Volkhov', serif;
-  font-size: 84px; 
+  color: #181e4b;
+  font-family: "Volkhov", serif;
+  font-size: 84px;
   font-weight: 700;
   line-height: 89px;
   letter-spacing: -0.04em;
   margin-bottom: 30px;
 }
 
-
 .subtext {
-  color: #5E6282;
-  font-family: 'Poppins', sans-serif;
+  color: #5e6282;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
@@ -54,7 +93,6 @@
   max-width: 477px;
 }
 
-/* Buttons Area */
 .hero-buttons {
   display: flex;
   align-items: center;
@@ -62,16 +100,16 @@
 }
 
 .btn-cta {
-  background-color: #F1A501;
+  background-color: #f1a501;
   color: white;
   border: none;
   border-radius: 10px;
   padding: 19px 26px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 18px;
   cursor: pointer;
-  box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15); 
+  box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
   transition: transform 0.2s;
 }
 
@@ -86,21 +124,21 @@
   align-items: center;
   gap: 21px;
   cursor: pointer;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 17px;
-  color: #686D77;
+  color: #686d77;
   font-weight: 500;
 }
 
 .play-icon {
   width: 52px;
   height: 52px;
-  background-color: #DF6951;
+  background-color: #df6951;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3); 
+  box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
   color: white;
   transition: transform 0.2s;
 }
@@ -109,30 +147,28 @@
   transform: scale(1.1);
 }
 
-/* --- Right Side: Image --- */
 .hero-image-container {
   flex: 1;
   position: relative;
   display: flex;
   justify-content: center;
+  z-index: 2;
 }
 
 .hero-img {
   width: 100%;
-  max-width: 765px; 
+  max-width: 765px;
   height: auto;
   object-fit: contain;
-  position: relative; 
-  z-index: 5;
 }
 
 /* Mobile Responsiveness */
 @media (max-width: 960px) {
   .hero-container {
-    flex-direction: column-reverse; 
+    flex-direction: column-reverse;
     text-align: center;
   }
-  
+
   .hero-content {
     display: flex;
     flex-direction: column;
@@ -143,8 +179,14 @@
     font-size: 48px;
     line-height: 1.2;
   }
-  
+
   .hero-buttons {
     justify-content: center;
+  }
+
+  /* Hide massive blob on mobile or adjust size */
+  .hero-blob-img {
+    width: 100%;
+    opacity: 0.5;
   }
 }

@@ -21,18 +21,18 @@
 }
 
 .book-subtitle {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
-  color: #5E6282;
+  color: #5e6282;
   font-weight: 600;
   display: block;
   margin-bottom: 15px;
 }
 
 .book-title {
-  font-family: 'Volkhov', serif;
+  font-family: "Volkhov", serif;
   font-size: 50px;
-  color: #14183E;
+  color: #14183e;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 30px;
@@ -48,38 +48,45 @@
 
 .step-item {
   display: flex;
-  align-items: flex-start; 
+  align-items: flex-start;
   gap: 20px;
 }
 
 /* Step Icons (The colored squares) */
 .step-icon-box {
-  width: 48px;
-  height: 48px;
+  width: 46px;
+  height: 46px;
   border-radius: 13px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  /* right: 50px; */
 }
 
-.icon-yellow { background-color: #F0BB1F; }
-.icon-red { background-color: #F15A2B; }
-.icon-blue { background-color: #006380; }
+.icon-yellow {
+  background-color: #f0bb1f;
+}
+.icon-red {
+  background-color: #f15a2b;
+}
+.icon-blue {
+  background-color: #006380;
+}
 
 /* Step Text */
 .step-text h4 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
-  color: #5E6282;
+  color: #5e6282;
   font-weight: 700;
   margin-bottom: 4px;
 }
 
 .step-text p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
-  color: #5E6282;
+  color: #5e6282;
   font-weight: 400;
   line-height: 124.5%;
 }
@@ -98,9 +105,9 @@
   border-radius: 26px;
   padding: 20px;
   width: 370px;
-  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 
-              0px 64.8148px 46.8519px rgba(0, 0, 0, 0.015), 
-              0px 13px 13px rgba(0, 0, 0, 0.007);
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02),
+    0px 64.8148px 46.8519px rgba(0, 0, 0, 0.015),
+    0px 13px 13px rgba(0, 0, 0, 0.007);
   position: relative;
   z-index: 1;
 }
@@ -114,7 +121,7 @@
 }
 
 .trip-title {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: 500;
   color: #080809;
@@ -122,9 +129,9 @@
 }
 
 .trip-date {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
-  color: #84829A;
+  color: #84829a;
   margin-bottom: 20px;
 }
 
@@ -138,7 +145,7 @@
 .icon-circle {
   width: 36px;
   height: 36px;
-  background: #F5F5F5;
+  background: #f5f5f5;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -149,16 +156,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
-  color: #84829A;
+  color: #84829a;
 }
 
 /* --- The Floating "Ongoing" Card --- */
 .floating-card {
   position: absolute;
   bottom: 40px;
-  right: -107px; 
+  right: -40px;
   background: white;
   padding: 15px 20px;
   border-radius: 18px;
@@ -166,8 +173,8 @@
   display: flex;
   gap: 15px;
   width: 263px;
-    z-index: 2; 
-  }
+  z-index: 2;
+}
 
 .float-img {
   width: 50px;
@@ -177,16 +184,16 @@
 }
 
 .float-content h5 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
-  color: #84829A;
+  color: #84829a;
   margin-bottom: 5px;
 }
 
 .float-content h4 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
-  color: #14183E;
+  color: #14183e;
   font-weight: 500;
   margin-bottom: 10px;
 }
@@ -194,14 +201,14 @@
 .progress-bar {
   width: 100%;
   height: 5px;
-  background: #F5F5F5;
+  background: #f5f5f5;
   border-radius: 10px;
 }
 
 .progress-fill {
   width: 40%;
   height: 100%;
-  background: #8A79DF; 
+  background: #8a79df;
   border-radius: 10px;
 }
 
@@ -220,8 +227,8 @@
   .book-image-wrapper {
     margin-top: 40px;
   }
-  
+
   .floating-card {
-    right: 0; 
+    right: 0;
   }
 }

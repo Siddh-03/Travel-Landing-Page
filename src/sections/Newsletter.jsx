@@ -3,7 +3,7 @@ import "./styles/Newsletter.css";
 
 const Newsletter = () => {
   const [email, setEmail] = useState("");
-  const [status, setStatus] = useState("idle"); 
+  const [status, setStatus] = useState("idle");
   const [message, setMessage] = useState("");
 
   const handleSubmit = async (e) => {
@@ -32,7 +32,7 @@ const Newsletter = () => {
       if (response.ok) {
         setStatus("success");
         setMessage("Thank you for subscribing! 🚀");
-        setEmail(""); 
+        setEmail("");
       } else {
         throw new Error("Something went wrong.");
       }
@@ -49,8 +49,19 @@ const Newsletter = () => {
         <div className="send-icon-decor">
           <img src="images/Group 77.png" alt="" />
         </div>
-
         <div className="newsletter-box">
+          <img
+            src="/images/Mask Group.png"
+            alt=""
+            className="decor-ring ring-left"
+          />
+          <img
+            src="/images/Group 42.png"
+            alt=""
+            className="decor-ring ring-right"
+          />
+
+
           <h2 className="newsletter-title">
             Subscribe to get information, latest news and other interesting
             offers about Jadoo
@@ -58,9 +69,12 @@ const Newsletter = () => {
 
           <form className="newsletter-form" onSubmit={handleSubmit}>
             <div className="input-wrapper">
-              <img src="images/Group 46.png" alt="Mail Icon" className="mail-icon" />
+              <img
+                src="images/Group 46.png"
+                alt="Mail Icon"
+                className="mail-icon"
+              />
               <input
-                // type="email"
                 placeholder="Your email"
                 className="newsletter-input"
                 value={email}
@@ -77,8 +91,11 @@ const Newsletter = () => {
             </button>
           </form>
 
-          {/* Success / Error Message Display */}
           {message && <p className={`status-message ${status}`}>{message}</p>}
+        </div>
+    
+        <div className="plus-decor-bottom">
+          <img src="/images/Group 5.png" alt="" />
         </div>
       </div>
     </section>

@@ -39,9 +39,7 @@ const Testimonials = () => {
   if (loading)
     return <div className="text-center py-20">Loading reviews...</div>;
 
-  // Logic to determine which cards to show
   const activeItem = testimonials[currentIndex];
-  // Get the next item for the background, or loop to start if at end
   const nextItemIndex =
     currentIndex === testimonials.length - 1 ? 0 : currentIndex + 1;
   const backItem = testimonials[nextItemIndex];
