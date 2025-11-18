@@ -7,8 +7,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="nav-container">
         {/* Logo */}
-        <div className="logo">Jadoo</div>
-
+<img src="images/Logo.png" alt="" />
         {/* Desktop Menu */}
         <ul className="nav-menu">
           <li className="nav-item">Destinations</li>
