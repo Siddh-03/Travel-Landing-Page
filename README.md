@@ -1,6 +1,6 @@
 # Travel Landing Page (Jadoo) ✈️
 
-A pixel-perfect, responsive travel agency landing page built with React.js and Pure CSS. This project replicates a Figma design with high fidelity and features a mock backend integration for dynamic data fetching.
+A pixel-perfect, responsive travel agency landing page built with React.js and pure CSS. This project replicates a Figma design with high fidelity and features a mock backend integration for dynamic data fetching.
 
 ---
 
@@ -24,7 +24,7 @@ A pixel-perfect, responsive travel agency landing page built with React.js and P
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** React (Vite), **pure CSS**
+- **Frontend:** React (Vite), pure CSS
 - **Icons:** Lucide React
 - **Backend (Mock):** JSON-Server
 - **HTTP Client:** Fetch API
@@ -36,53 +36,53 @@ A pixel-perfect, responsive travel agency landing page built with React.js and P
 To run this project locally, you need **Node.js** installed.
 
 ### 1. Clone the Repository
+
 ```bash
-
 git clone https://github.com/Siddh-03/Travel-Landing-Page.git
-
 cd Travel-Landing-Page
 ```
 
 ### 2. Install Dependencies
-```bash
 
+```bash
 npm install
 ```
 
 ### 3. Start the Mock Backend (Terminal 1)
 
 The frontend requires the API to be running in order to fetch data.
-```bash
 
+```bash
 npm run server
 ```
 
-The API will run at [http://localhost:4000](http://localhost:4000)
+The API will run at http://localhost:4000
 
 ### 4. Start the React App (Terminal 2)
 
 Open a **new terminal window** and run:
-```bash
 
+```bash
 npm run dev
 ```
 
-The app will launch at [http://localhost:5173](http://localhost:5173)
+The app will launch at http://localhost:5173
 
 ---
 
 ## 📂 Project Structure
 
+```
 /
 ├── public/
 ├── src/
-│   ├──Sections
+│   ├── Sections
 │   ├── assets/
 │   └── App.jsx
-├── db.json             # Example mock backend data
+├── db.json         # Example mock backend data
 ├── vite.config.js
 └── package.json
-
+```
 
 ---
 
