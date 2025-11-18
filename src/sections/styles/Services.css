@@ -1,0 +1,130 @@
+/* Section Spacing */
+.services-section {
+  padding: 80px 0;
+  position: relative;
+  background-color: white; 
+}
+
+.services-container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* --- Header Text --- */
+.services-category {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #5e6282;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.services-title {
+  font-family: "Volkhov", serif;
+  font-size: 50px;
+  font-weight: 700;
+  color: #181e4b;
+  margin-bottom: 60px;
+  text-transform: capitalize;
+}
+
+/* --- Grid Layout --- */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 30px;
+  justify-items: center;
+}
+
+/* --- Service Card Styling --- */
+.service-card {
+  background: transparent;
+  border-radius: 36px;
+  padding: 40px 25px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  max-width: 260px;
+}
+
+/* Hover Effect  */
+.service-card:hover {
+  background: white;
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02),
+    0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
+    0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481),
+    0px 13px 13px rgba(0, 0, 0, 0.007);
+}
+
+/* The Red Shape Decor on Hover */
+.service-card::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+  width: 50px;
+  height: 50px;
+  background-color: #df6951;
+  border-radius: 18px 0 10px 0;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.service-card:hover::after {
+  opacity: 1; 
+}
+
+/* --- Card Content --- */
+.icon-placeholder {
+  height: 80px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-img {
+  max-height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+.card-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #1e1d4c;
+  margin-bottom: 15px;
+}
+
+.card-desc {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #5e6282;
+  line-height: 26px;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr; 
+  }
+
+  .services-title {
+    font-size: 36px;
+  }
+}

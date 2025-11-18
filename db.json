@@ -5,70 +5,70 @@
       "city": "Rome, Italy",
       "price": "$5.42k",
       "duration": "10 Days Trip",
-      "image": "/images/rome.jpg"
+      "image": "/images/Destinations/rome.jpg"
     },
     {
       "id": 2,
       "city": "London, UK",
       "price": "$4.20k",
       "duration": "12 Days Trip",
-      "image": "/images/london.jpg"
+      "image": "/images/Destinations/london.jpg"
     },
     {
       "id": 3,
       "city": "Full Europe",
       "price": "$15k",
       "duration": "28 Days Trip",
-      "image": "/images/europe.jpg"
+      "image": "/images/Destinations/europe.jpg"
     },
     {
       "id": 4,
       "city": "Tokyo, Japan",
       "price": "$7.80k",
       "duration": "8 Days Trip",
-      "image": "/images/tokyo.jpg"
+      "image": "/images/Destinations/tokyo.jpg"
     },
     {
       "id": 5,
       "city": "Bali, Indonesia",
       "price": "$3.50k",
       "duration": "7 Days Trip",
-      "image": "/images/bali.jpg"
+      "image": "/images/Destinations/bali.jpg"
     },
     {
       "id": 6,
       "city": "Paris, France",
       "price": "$6.90k",
       "duration": "9 Days Trip",
-      "image": "/images/paris.jpg"
+      "image": "/images/Destinations/paris.jpg"
     },
     {
       "id": 7,
       "city": "New York, USA",
       "price": "$8.10k",
       "duration": "6 Days Trip",
-      "image": "/images/newyork.jpg"
+      "image": "/images/Destinations/newyork.jpg"
     },
     {
       "id": 8,
       "city": "Dubai, UAE",
       "price": "$5.80k",
       "duration": "5 Days Trip",
-      "image": "/images/dubai.jpg"
+      "image": "/images/Destinations/dubai.jpg"
     },
     {
       "id": 9,
       "city": "Sydney, Australia",
       "price": "$9.40k",
       "duration": "10 Days Trip",
-      "image": "/images/sydney.jpg"
+      "image": "/images/Destinations/sydney.jpg"
     },
     {
       "id": 10,
       "city": "Istanbul, Turkey",
       "price": "$4.70k",
       "duration": "7 Days Trip",
-      "image": "/images/istanbul.jpg"
+      "image": "/images/Destinations/istanbul.jpg"
     }
   ],
   "subscribers": [],
