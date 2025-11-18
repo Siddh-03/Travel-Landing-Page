@@ -1,0 +1,169 @@
+.newsletter-section {
+  padding: 80px 0;
+  background-color: white;
+  position: relative;
+}
+
+.newsletter-container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+/* The Purple Box */
+.newsletter-box {
+  /* opacity: 0.8; */
+  background-color: #dfd7f9; /* Light purple base */
+  background-image: linear-gradient(
+    to bottom right,
+    #dfd7f9 0%,
+    #dfd7f950 100%
+  );
+  border-radius: 129px 20px 20px 20px;
+  padding: 80px 40px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decoration (The faint rings) */
+.newsletter-box::before {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: -50px;
+  width: 300px;
+  height: 300px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* The Send Icon (Top Right) */
+.send-icon-decor {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(201.65deg, #747def 10.27%, #5e3be1 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  z-index: 5;
+}
+
+/* Text */
+.newsletter-title {
+  font-family: "Volkhov", serif;
+  font-size: 33px;
+  color: #5e6282;
+  font-weight: 600;
+  line-height: 54px;
+  max-width: 859px;
+  margin: 0 auto 60px auto;
+}
+
+/* Form Area */
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  position: relative;
+  z-index: 2;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 420px;
+}
+
+.mail-icon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #39425d;
+  opacity: 0.5;
+}
+
+.newsletter-input {
+  width: 100%;
+  padding: 22px 20px 22px 60px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #39425d;
+  background: white;
+}
+
+.newsletter-input::placeholder {
+  color: #39425d;
+  opacity: 0.4;
+}
+
+.btn-subscribe {
+  background: linear-gradient(180deg, #ff946d 0%, #ff7d68 100%);
+  border: none;
+  border-radius: 10px;
+  padding: 22px 50px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.btn-subscribe:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 10px 20px rgba(255, 125, 104, 0.3);
+}
+
+.btn-subscribe:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Status Messages */
+.status-message {
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.status-message.success {
+  color: #28a745;
+}
+
+.status-message.error {
+  color: #dc3545;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .newsletter-form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .input-wrapper {
+    width: 100%;
+  }
+
+  .btn-subscribe {
+    width: 100%;
+  }
+
+  .newsletter-title {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+}

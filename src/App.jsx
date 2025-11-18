@@ -5,6 +5,7 @@ import Destinations from "./sections/Destinations";
 import BookTrip from "./sections/BookTrip";
 import Testimonials from "./sections/Testimonials";
 import Logos from './sections/Logos';
+import Newsletter from './sections/Newsletter';
 function App() {
   return (
     <div className="min-h-screen font-poppins bg-white relative">
@@ -15,6 +16,7 @@ function App() {
       <BookTrip />
       <Testimonials />
       <Logos />
+      <Newsletter />
     </div>
   );
 }
