@@ -63,6 +63,7 @@ The API will run at http://localhost:4000
 Open a **new terminal window** and run:
 
 ```bash
+cd Travel-Landing-Page
 npm run dev
 ```
 
@@ -76,8 +77,8 @@ The app will launch at http://localhost:5173
 /
 ├── public/
 ├── src/
-│   ├── Sections
-│   ├── assets/
+│   ├── Sections (Hero,Destinations etc.)
+|           ├── styles (All css files)
 │   └── App.jsx
 ├── db.json         # Example mock backend data
 ├── vite.config.js

@@ -4,7 +4,6 @@
   padding-top: 150px;
   padding-bottom: 50px;
   position: relative;
-  overflow: visible;
 }
 
 /* --- 1. The Background Blob  --- */
@@ -13,11 +12,11 @@
   top: -230px;
   right: -40px;
   pointer-events: none;
-  z-index: -1; 
+  z-index: -1;
 }
 
 .hero-blob-img {
-  max-width: 90vw; 
+  max-width: 90vw;
   width: auto;
   height: auto;
   object-fit: contain;
@@ -27,23 +26,23 @@
 .highlight {
   position: relative;
   z-index: 1;
-  display: inline-block; 
+  display: inline-block;
 }
 
 .highlight::after {
   content: "";
   position: absolute;
-  left: -18px; 
-  bottom: 1px; 
+  left: -18px;
+  bottom: 1px;
   width: 130%;
-  height: 20px; 
-  z-index: -1; 
+  height: 20px;
+  z-index: -1;
 
   /* This SVG creates the curve */
   background-image: url("data:image/svg+xml,%3Csvg width='200' height='20' viewBox='0 0 200 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 12C35 5 102 -2 198 8' stroke='%23DF6951' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E");
 
   background-repeat: no-repeat;
-  background-size: 100% 100%; 
+  background-size: 100% 100%;
 }
 
 .hero-container {
@@ -54,7 +53,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  position: relative; 
+  position: relative;
 }
 
 .hero-content {
@@ -182,6 +181,10 @@
 
   .hero-buttons {
     justify-content: center;
+  }
+
+  .hero-blob-container {
+    display: none;
   }
 
   /* Hide massive blob on mobile or adjust size */
